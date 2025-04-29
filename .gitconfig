@@ -1,0 +1,37 @@
+# This is Git's per-user configuration file.
+[user]
+	name = ""
+	email = ""
+[alias]
+	# checkout
+	co = checkout
+
+	# add
+	au = add --update
+	ai = add --interactive
+	aa = add -A
+	
+	# commit
+	ci = commit
+	cian = commit --amend --no-edit	
+	cia = commit --amend
+
+	# branch
+	br = branch
+
+	# status
+	st = status
+
+	# log
+	lg = log --oneline --graph --decorate --all
+
+	# reset/clean
+	clean-all = !git reset --hard && git clean -fd
+
+	# stash
+	ss = stash save
+	sl = stash list
+	sp = stash pop
+
+	# push
+	pfl = push --force-with-lease
