@@ -35,3 +35,10 @@
 
 	# push
 	pfl = push --force-with-lease
+
+	# rebase
+	ri = rebase --interactive
+	rc = rebase --continue
+	ra = rebase --abort
+[push]
+	autoSetupRemote = true
