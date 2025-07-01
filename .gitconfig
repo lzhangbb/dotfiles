@@ -3,44 +3,47 @@
 	name = ""
 	email = ""
 [alias]
-	# checkout
-	co = checkout
-
 	# add
-	au = add --update
-	ai = add --interactive
 	aa = add -A
+	ai = add --interactive
+	au = add --update
 	
-	# commit
-	ci = commit
-	cian = commit --amend --no-edit	
-	cia = commit --amend
-
 	# branch
 	br = branch
 
-	# status
-	st = status
-
-	# log
-	lg = log --oneline --graph --decorate --all
+	# commit
+	ci = commit
+	cia = commit --amend
+	cian = commit --amend --no-edit	
 
 	# reset/clean
 	clean-all = !git reset --hard && git clean -fd
 
-	# stash
-	ss = stash save
-	sl = stash list
-	sp = stash pop
+	# checkout
+	co = checkout
+
+	# fetch
+	fp = fetch --prune
+
+	# log
+	lg = log --oneline --graph --decorate --all
 
 	# push
 	pfl = push --force-with-lease
 
 	# rebase
-	ri = rebase --interactive
-	rc = rebase --continue
 	ra = rebase --abort
+	rc = rebase --continue
+	ri = rebase --interactive
 	ro = rebase --onto
+
+	# stash
+	sl = stash list
+	sp = stash pop
+	ss = stash save
+
+	# status
+	st = status
 [push]
 	autoSetupRemote = true
 [pull]
